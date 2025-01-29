@@ -1,20 +1,50 @@
+@import url(https://fonts.bunny.net/css?family=anonymous-pro:400);
+
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     height: 100vh;
+    box-sizing: border-box;
+    font-family: "anonymous-pro:400", 'Courier New', Courier, monospace
 }
 
 .sidebar {
     grid-column: 1;
     grid-row: 1 / 3;
-    background-color: lightskyblue;
+    background-color: rgb(37, 131, 190);
     display: flex;
     flex-direction: column;
+    font-weight: bold;
 }
 
 .sidebar a {
     text-decoration: none;
     color: white
+}
+
+.dashboard, .user-tabs, .user-settings {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.dashboard {
+    font-size: 24px;
+}
+
+.dashboard > a, .user-tabs > a, .user-settings > a {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+}
+
+.dashboard > a > img {
+    width: 36px;
+}
+
+.user-tabs > a > img, .user-settings > a > img {
+    width: 24px;
 }
 
 .header {
