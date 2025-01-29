@@ -3,6 +3,7 @@
 :root {
     --main-color:  rgb(37, 131, 190);
     --secondary-color: rgb(218, 186, 28);
+    --light-gray: rgb(225, 225, 225);
 }
 
 body {
@@ -70,6 +71,7 @@ body {
     grid-template-rows: 1fr 1fr;
     align-items: center;
     padding: 12px 24px;
+    font-weight: bold;
 }
 
 .search {
@@ -86,7 +88,7 @@ body {
 .search-bar {
     border: none;
     border-radius: 8px;
-    background-color: lightgray;
+    background-color: var(--light-gray);
     width: 480px;
     height: 16px;
 }
@@ -96,6 +98,7 @@ body {
     grid-row: 1;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .user-notifications > img:first-child {
@@ -124,6 +127,9 @@ body {
 .header-buttons {
     grid-column: 2;
     grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 button {
@@ -138,5 +144,5 @@ button {
 .main-content {
     grid-column: 2;
     grid-row: 2;
-    background-color: lightgray;
+    background-color: var(--light-gray);
 }
