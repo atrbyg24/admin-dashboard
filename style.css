@@ -182,18 +182,20 @@ button {
 
 .card {
     background-color: white;
+    box-sizing: border-box;
     width: 360px;
     height: 240px;
     border-left: 8px solid var(--secondary-color);
     border-radius: 8px;
+    padding: 16px;
+    display: grid;
 }
 
 .engagement {
-    display: flex;
     gap: 24px;
-    position: relative;
-    left: 200px;
-    top: 180px;
+    display: flex;
+    justify-content: end;
+    align-self: end;
 }
 
 .engagement img {
