@@ -217,6 +217,27 @@ button {
     display: grid;
 }
 
+.announcements-content {
+    grid-template-rows: repeat(3,1fr);
+    gap: 12px;
+
+}
+
+.announcement {
+    border-bottom: 2px solid var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    gap:12px
+}
+
+.announcement > span {
+    font-weight: bold;
+}
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
 .trending-content {
     grid-template-rows: repeat(4,1fr);
 }
