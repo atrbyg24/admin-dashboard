@@ -154,4 +154,31 @@ button {
     grid-column: 2;
     grid-row: 2;
     background-color: var(--light-gray);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 16px;
+    padding: 32px 16px;
+}
+
+.projects {
+    grid-column: 1;
+    display: grid;
+}
+
+.cards-container {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fit,360px);
+}
+
+.card {
+    background-color: white;
+    width: 360px;
+    height: 240px;
+    border-left: 8px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.updates {
+    grid-column: 2;
 }
